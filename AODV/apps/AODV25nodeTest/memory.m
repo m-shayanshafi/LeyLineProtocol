@@ -1,0 +1,12 @@
+clc;
+clear;
+close all;
+x = [0,10,20, 30,40, 50, 60, 70,80,90,100];
+y2 = [10,10,10, 10,10, 10, 10, 10,10,10,10];
+y1 = [0,9, 19, 29, 39, 49, 59 69,79,89,99];
+hold on;
+plot(x,y1,'o-r');
+plot(x,y2,'o-b');
+ylabel("Number of entries");
+xlabel("Numberof nodes");
+legend("AODV","LeyLine");
