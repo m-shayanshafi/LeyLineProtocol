@@ -1,0 +1,16 @@
+configuration LeyLine {
+
+}
+
+implementation {
+	components MainC, LeyLineM, LedsC;
+	
+	LeyLineM.Boot -> MainC.Boot;
+	LeyLineM.SplitControl -> AODV.SplitControl;
+	 LeyLineM.AMSend -> AODV.AMSend[1];
+ 	 LeyLineM.Receive -> AODV.Receive[1];
+  		AODV25nodeTestM.Leds -> LedsC;1
+	
+
+	
+}
