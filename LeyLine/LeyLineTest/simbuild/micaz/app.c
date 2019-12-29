@@ -804,7 +804,7 @@ extern void *malloc(size_t __size) __attribute((__leaf__)) __attribute((__nothro
 #line 483
 extern void free(void *__ptr) __attribute((__leaf__)) __attribute((__nothrow__)) ;
 #line 741
-typedef int (*__compar_fn_t)(const void *arg_0x7f3ebf82acf8, const void *arg_0x7f3ebf829020);
+typedef int (*__compar_fn_t)(const void *arg_0x7f366d9bbcf8, const void *arg_0x7f366d9ba020);
 #line 779
 __extension__ 
 #line 796
@@ -822,7 +822,7 @@ extern double sqrt(double __x) __attribute((__leaf__)) __attribute((__nothrow__)
 #line 184
 extern double floor(double __x) __attribute((__leaf__)) __attribute((__nothrow__)) __attribute((const)) ;
 #line 260
-extern double erfc(double arg_0x7f3ebf7a9618) __attribute((__leaf__)) __attribute((__nothrow__)) ;
+extern double erfc(double arg_0x7f366d93a618) __attribute((__leaf__)) __attribute((__nothrow__)) ;
 #line 336
 __extension__ 
 
@@ -1217,8 +1217,8 @@ typedef struct hashtable hashtable_t;
 #line 78
 struct hashtable *
 create_hashtable(unsigned int minsize, 
-unsigned int (*hashfunction)(void *arg_0x7f3ebf5628e8), 
-int (*key_eq_fn)(void *arg_0x7f3ebf5610c8, void *arg_0x7f3ebf561368));
+unsigned int (*hashfunction)(void *arg_0x7f366d6f38e8), 
+int (*key_eq_fn)(void *arg_0x7f366d6f20c8, void *arg_0x7f366d6f2368));
 #line 103
 #line 102
 int 
@@ -1831,7 +1831,7 @@ struct tm;
 
 struct tm;
 # 46 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/lib/tossim/randomlib.h"
-static inline void RandomInitialise(int arg_0x7f3ebf35f610, int arg_0x7f3ebf35f878);
+static inline void RandomInitialise(int arg_0x7f366d4f0610, int arg_0x7f366d4f0878);
 static double RandomUniform(void );
 # 51 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/lib/tossim/sim_noise.c"
 int numCase1 = 0;
@@ -3974,11 +3974,11 @@ static error_t MeasureClockC$Init$init(void );
 # 67 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/TaskBasic.nc"
 static error_t SimSchedulerBasicP$TaskBasic$postTask(
 # 49 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/lib/tossim/SimSchedulerBasicP.nc"
-uint8_t arg_0x7f3ebf24e108);
+uint8_t arg_0x7f366d3df108);
 # 75 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/TaskBasic.nc"
 static void SimSchedulerBasicP$TaskBasic$default$runTask(
 # 49 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/lib/tossim/SimSchedulerBasicP.nc"
-uint8_t arg_0x7f3ebf24e108);
+uint8_t arg_0x7f366d3df108);
 # 57 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/Scheduler.nc"
 static void SimSchedulerBasicP$Scheduler$init(void );
 
@@ -4008,7 +4008,7 @@ static long long int SimMoteP$SimMote$getStartTime(void );
 # 80 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/AMSend.nc"
 static error_t TossimActiveMessageC$AMSend$send(
 # 47 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/lib/tossim/TossimActiveMessageC.nc"
-am_id_t arg_0x7f3ebef5a220, 
+am_id_t arg_0x7f366d0eb220, 
 # 80 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/AMSend.nc"
 am_addr_t addr, 
 #line 71
@@ -4031,7 +4031,7 @@ message_t *
 
 TossimActiveMessageC$Snoop$default$receive(
 # 49 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/lib/tossim/TossimActiveMessageC.nc"
-am_id_t arg_0x7f3ebef57020, 
+am_id_t arg_0x7f366d0e8020, 
 # 71 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/Receive.nc"
 message_t * msg, 
 void * payload, 
@@ -4078,7 +4078,7 @@ message_t *
 
 TossimActiveMessageC$Receive$default$receive(
 # 48 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/lib/tossim/TossimActiveMessageC.nc"
-am_id_t arg_0x7f3ebef59340, 
+am_id_t arg_0x7f366d0ea340, 
 # 71 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/Receive.nc"
 message_t * msg, 
 void * payload, 
@@ -4363,7 +4363,7 @@ uint8_t len);
 # 80 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/AMSend.nc"
 static error_t LeyLine_M$AMSend$send(
 # 12 "/opt/local/src/tinyos-release-tinyos-2_1_2/apps/LeyLine/lib/LeyLine_M.nc"
-am_id_t arg_0x7f3ebed11020, 
+am_id_t arg_0x7f366cea2020, 
 # 80 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/AMSend.nc"
 am_addr_t addr, 
 #line 71
@@ -4380,7 +4380,7 @@ uint8_t len);
 #line 110
 static void LeyLine_M$AMSend$default$sendDone(
 # 12 "/opt/local/src/tinyos-release-tinyos-2_1_2/apps/LeyLine/lib/LeyLine_M.nc"
-am_id_t arg_0x7f3ebed11020, 
+am_id_t arg_0x7f366cea2020, 
 # 103 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/AMSend.nc"
 message_t * msg, 
 
@@ -4513,7 +4513,7 @@ message_t *
 
 LeyLine_M$Receive$default$receive(
 # 13 "/opt/local/src/tinyos-release-tinyos-2_1_2/apps/LeyLine/lib/LeyLine_M.nc"
-am_id_t arg_0x7f3ebed10158, 
+am_id_t arg_0x7f366cea1158, 
 # 71 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/Receive.nc"
 message_t * msg, 
 void * payload, 
@@ -4823,11 +4823,11 @@ static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$TimerFrom$fire
 #line 83
 static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$Timer$default$fired(
 # 48 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/lib/timer/VirtualizeTimerC.nc"
-uint8_t arg_0x7f3ebe8d0da0);
+uint8_t arg_0x7f366ca61da0);
 # 64 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/lib/timer/Timer.nc"
 static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$Timer$startPeriodic(
 # 48 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/lib/timer/VirtualizeTimerC.nc"
-uint8_t arg_0x7f3ebe8d0da0, 
+uint8_t arg_0x7f366ca61da0, 
 # 64 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/lib/timer/Timer.nc"
 uint32_t dt);
 
@@ -4840,7 +4840,7 @@ uint32_t dt);
 
 static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$Timer$startOneShot(
 # 48 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/lib/timer/VirtualizeTimerC.nc"
-uint8_t arg_0x7f3ebe8d0da0, 
+uint8_t arg_0x7f366ca61da0, 
 # 73 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/lib/timer/Timer.nc"
 uint32_t dt);
 
@@ -4849,7 +4849,7 @@ uint32_t dt);
 
 static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$Timer$stop(
 # 48 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/lib/timer/VirtualizeTimerC.nc"
-uint8_t arg_0x7f3ebe8d0da0);
+uint8_t arg_0x7f366ca61da0);
 # 82 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/lib/timer/Counter.nc"
 static void /*HilTimerMilliC.CounterToLocalTimeC*/CounterToLocalTimeC$0$Counter$overflow(void );
 # 80 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/AMSend.nc"
@@ -4876,7 +4876,7 @@ error_t error);
 # 110 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/AMSend.nc"
 static void /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$AMSend$sendDone(
 # 48 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/system/AMQueueImplP.nc"
-am_id_t arg_0x7f3ebe837650, 
+am_id_t arg_0x7f366c9c8650, 
 # 103 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/AMSend.nc"
 message_t * msg, 
 
@@ -4889,7 +4889,7 @@ error_t error);
 # 75 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/Send.nc"
 static error_t /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$Send$send(
 # 46 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/system/AMQueueImplP.nc"
-uint8_t arg_0x7f3ebe839460, 
+uint8_t arg_0x7f366c9ca460, 
 # 67 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/Send.nc"
 message_t * msg, 
 
@@ -4903,7 +4903,7 @@ uint8_t len);
 #line 100
 static void /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$Send$default$sendDone(
 # 46 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/system/AMQueueImplP.nc"
-uint8_t arg_0x7f3ebe839460, 
+uint8_t arg_0x7f366c9ca460, 
 # 96 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/Send.nc"
 message_t * msg, 
 
@@ -5324,7 +5324,7 @@ int sim_main_start_mote(void )   ;
 # 75 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/TaskBasic.nc"
 static void SimSchedulerBasicP$TaskBasic$runTask(
 # 49 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/lib/tossim/SimSchedulerBasicP.nc"
-uint8_t arg_0x7f3ebf24e108);
+uint8_t arg_0x7f366d3df108);
 
 
 
@@ -5492,7 +5492,7 @@ static am_addr_t TossimActiveMessageC$amAddress(void );
 # 110 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/AMSend.nc"
 static void TossimActiveMessageC$AMSend$sendDone(
 # 47 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/lib/tossim/TossimActiveMessageC.nc"
-am_id_t arg_0x7f3ebef5a220, 
+am_id_t arg_0x7f366d0eb220, 
 # 103 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/AMSend.nc"
 message_t * msg, 
 
@@ -5511,7 +5511,7 @@ message_t *
 
 TossimActiveMessageC$Snoop$receive(
 # 49 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/lib/tossim/TossimActiveMessageC.nc"
-am_id_t arg_0x7f3ebef57020, 
+am_id_t arg_0x7f366d0e8020, 
 # 71 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/Receive.nc"
 message_t * msg, 
 void * payload, 
@@ -5530,7 +5530,7 @@ message_t *
 
 TossimActiveMessageC$Receive$receive(
 # 48 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/lib/tossim/TossimActiveMessageC.nc"
-am_id_t arg_0x7f3ebef59340, 
+am_id_t arg_0x7f366d0ea340, 
 # 71 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/Receive.nc"
 message_t * msg, 
 void * payload, 
@@ -6047,7 +6047,7 @@ uint8_t len);
 # 110 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/AMSend.nc"
 static void LeyLine_M$AMSend$sendDone(
 # 12 "/opt/local/src/tinyos-release-tinyos-2_1_2/apps/LeyLine/lib/LeyLine_M.nc"
-am_id_t arg_0x7f3ebed11020, 
+am_id_t arg_0x7f366cea2020, 
 # 103 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/AMSend.nc"
 message_t * msg, 
 
@@ -6120,7 +6120,7 @@ message_t *
 
 LeyLine_M$Receive$receive(
 # 13 "/opt/local/src/tinyos-release-tinyos-2_1_2/apps/LeyLine/lib/LeyLine_M.nc"
-am_id_t arg_0x7f3ebed10158, 
+am_id_t arg_0x7f366cea1158, 
 # 71 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/Receive.nc"
 message_t * msg, 
 void * payload, 
@@ -6898,7 +6898,7 @@ static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$TimerFrom$stop
 
 static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$Timer$fired(
 # 48 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/lib/timer/VirtualizeTimerC.nc"
-uint8_t arg_0x7f3ebe8d0da0);
+uint8_t arg_0x7f366ca61da0);
 #line 71
 enum /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$__nesc_unnamed4339 {
 #line 71
@@ -7025,7 +7025,7 @@ static inline void /*LeyLine.HelloSend.SenderC.AMQueueEntryP*/AMQueueEntryP$0$Se
 # 80 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/AMSend.nc"
 static error_t /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$AMSend$send(
 # 48 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/system/AMQueueImplP.nc"
-am_id_t arg_0x7f3ebe837650, 
+am_id_t arg_0x7f366c9c8650, 
 # 80 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/AMSend.nc"
 am_addr_t addr, 
 #line 71
@@ -7042,7 +7042,7 @@ uint8_t len);
 # 100 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/Send.nc"
 static void /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$Send$sendDone(
 # 46 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/system/AMQueueImplP.nc"
-uint8_t arg_0x7f3ebe839460, 
+uint8_t arg_0x7f366c9ca460, 
 # 96 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/Send.nc"
 message_t * msg, 
 
@@ -9181,13 +9181,13 @@ static inline message_t *LeyLine_M$Receive$default$receive(am_id_t id, message_t
 }
 
 # 78 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/Receive.nc"
-inline static message_t * LeyLine_M$Receive$receive(am_id_t arg_0x7f3ebed10158, message_t * msg, void * payload, uint8_t len){
+inline static message_t * LeyLine_M$Receive$receive(am_id_t arg_0x7f366cea1158, message_t * msg, void * payload, uint8_t len){
 #line 78
   nx_struct message_t *__nesc_result;
 #line 78
 
 #line 78
-  switch (arg_0x7f3ebed10158) {
+  switch (arg_0x7f366cea1158) {
 #line 78
     case 1:
 #line 78
@@ -9197,7 +9197,7 @@ inline static message_t * LeyLine_M$Receive$receive(am_id_t arg_0x7f3ebed10158, 
 #line 78
     default:
 #line 78
-      __nesc_result = LeyLine_M$Receive$default$receive(arg_0x7f3ebed10158, msg, payload, len);
+      __nesc_result = LeyLine_M$Receive$default$receive(arg_0x7f366cea1158, msg, payload, len);
 #line 78
       break;
 #line 78
@@ -9335,13 +9335,13 @@ static inline message_t *TossimActiveMessageC$Receive$default$receive(am_id_t id
 }
 
 # 78 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/Receive.nc"
-inline static message_t * TossimActiveMessageC$Receive$receive(am_id_t arg_0x7f3ebef59340, message_t * msg, void * payload, uint8_t len){
+inline static message_t * TossimActiveMessageC$Receive$receive(am_id_t arg_0x7f366d0ea340, message_t * msg, void * payload, uint8_t len){
 #line 78
   nx_struct message_t *__nesc_result;
 #line 78
 
 #line 78
-  switch (arg_0x7f3ebef59340) {
+  switch (arg_0x7f366d0ea340) {
 #line 78
     case 10:
 #line 78
@@ -9449,7 +9449,7 @@ inline static message_t * TossimActiveMessageC$Receive$receive(am_id_t arg_0x7f3
 #line 78
     default:
 #line 78
-      __nesc_result = TossimActiveMessageC$Receive$default$receive(arg_0x7f3ebef59340, msg, payload, len);
+      __nesc_result = TossimActiveMessageC$Receive$default$receive(arg_0x7f366d0ea340, msg, payload, len);
 #line 78
       break;
 #line 78
@@ -9579,13 +9579,13 @@ inline static am_addr_t /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$AMPacket$destina
 }
 #line 78
 # 80 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/AMSend.nc"
-inline static error_t /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$AMSend$send(am_id_t arg_0x7f3ebe837650, am_addr_t addr, message_t * msg, uint8_t len){
+inline static error_t /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$AMSend$send(am_id_t arg_0x7f366c9c8650, am_addr_t addr, message_t * msg, uint8_t len){
 #line 80
   unsigned char __nesc_result;
 #line 80
 
 #line 80
-  __nesc_result = TossimActiveMessageC$AMSend$send(arg_0x7f3ebe837650, addr, msg, len);
+  __nesc_result = TossimActiveMessageC$AMSend$send(arg_0x7f366c9c8650, addr, msg, len);
 #line 80
 
 #line 80
@@ -9594,9 +9594,9 @@ inline static error_t /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$AMSend$send(am_id_
 }
 #line 80
 #line 110
-inline static void TossimActiveMessageC$AMSend$sendDone(am_id_t arg_0x7f3ebef5a220, message_t * msg, error_t error){
+inline static void TossimActiveMessageC$AMSend$sendDone(am_id_t arg_0x7f366d0eb220, message_t * msg, error_t error){
 #line 110
-  /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$AMSend$sendDone(arg_0x7f3ebef5a220, msg, error);
+  /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$AMSend$sendDone(arg_0x7f366d0eb220, msg, error);
 #line 110
 }
 #line 110
@@ -10290,9 +10290,9 @@ static inline void LeyLine_M$AMSend$default$sendDone(uint8_t id, message_t *msg,
 }
 
 # 110 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/AMSend.nc"
-inline static void LeyLine_M$AMSend$sendDone(am_id_t arg_0x7f3ebed11020, message_t * msg, error_t error){
+inline static void LeyLine_M$AMSend$sendDone(am_id_t arg_0x7f366cea2020, message_t * msg, error_t error){
 #line 110
-  switch (arg_0x7f3ebed11020) {
+  switch (arg_0x7f366cea2020) {
 #line 110
     case 1:
 #line 110
@@ -10302,7 +10302,7 @@ inline static void LeyLine_M$AMSend$sendDone(am_id_t arg_0x7f3ebed11020, message
 #line 110
     default:
 #line 110
-      LeyLine_M$AMSend$default$sendDone(arg_0x7f3ebed11020, msg, error);
+      LeyLine_M$AMSend$default$sendDone(arg_0x7f366cea2020, msg, error);
 #line 110
       break;
 #line 110
@@ -11602,13 +11602,13 @@ static inline message_t *TossimActiveMessageC$Snoop$default$receive(am_id_t id, 
 }
 
 # 78 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/Receive.nc"
-inline static message_t * TossimActiveMessageC$Snoop$receive(am_id_t arg_0x7f3ebef57020, message_t * msg, void * payload, uint8_t len){
+inline static message_t * TossimActiveMessageC$Snoop$receive(am_id_t arg_0x7f366d0e8020, message_t * msg, void * payload, uint8_t len){
 #line 78
   nx_struct message_t *__nesc_result;
 #line 78
 
 #line 78
-    __nesc_result = TossimActiveMessageC$Snoop$default$receive(arg_0x7f3ebef57020, msg, payload, len);
+    __nesc_result = TossimActiveMessageC$Snoop$default$receive(arg_0x7f366d0e8020, msg, payload, len);
 #line 78
 
 #line 78
@@ -12034,9 +12034,9 @@ static inline void SimSchedulerBasicP$TaskBasic$default$runTask(uint8_t id)
 }
 
 # 75 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/TaskBasic.nc"
-inline static void SimSchedulerBasicP$TaskBasic$runTask(uint8_t arg_0x7f3ebf24e108){
+inline static void SimSchedulerBasicP$TaskBasic$runTask(uint8_t arg_0x7f366d3df108){
 #line 75
-  switch (arg_0x7f3ebf24e108) {
+  switch (arg_0x7f366d3df108) {
 #line 75
     case TossimPacketModelC$startDoneTask:
 #line 75
@@ -12082,7 +12082,7 @@ inline static void SimSchedulerBasicP$TaskBasic$runTask(uint8_t arg_0x7f3ebf24e1
 #line 75
     default:
 #line 75
-      SimSchedulerBasicP$TaskBasic$default$runTask(arg_0x7f3ebf24e108);
+      SimSchedulerBasicP$TaskBasic$default$runTask(arg_0x7f366d3df108);
 #line 75
       break;
 #line 75
@@ -12428,9 +12428,9 @@ static inline void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$Timer$d
 }
 
 # 83 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/lib/timer/Timer.nc"
-inline static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$Timer$fired(uint8_t arg_0x7f3ebe8d0da0){
+inline static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$Timer$fired(uint8_t arg_0x7f366ca61da0){
 #line 83
-  switch (arg_0x7f3ebe8d0da0) {
+  switch (arg_0x7f366ca61da0) {
 #line 83
     case 0U:
 #line 83
@@ -12476,7 +12476,7 @@ inline static void /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$Timer$f
 #line 83
     default:
 #line 83
-      /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$Timer$default$fired(arg_0x7f3ebe8d0da0);
+      /*HilTimerMilliC.VirtualizeTimerC*/VirtualizeTimerC$0$Timer$default$fired(arg_0x7f366ca61da0);
 #line 83
       break;
 #line 83
@@ -15010,9 +15010,9 @@ static void /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$Send$default$sendDone(uint8_
 }
 
 # 100 "/opt/local/src/tinyos-release-tinyos-2_1_2/tos/interfaces/Send.nc"
-static void /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$Send$sendDone(uint8_t arg_0x7f3ebe839460, message_t * msg, error_t error){
+static void /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$Send$sendDone(uint8_t arg_0x7f366c9ca460, message_t * msg, error_t error){
 #line 100
-  switch (arg_0x7f3ebe839460) {
+  switch (arg_0x7f366c9ca460) {
 #line 100
     case 0U:
 #line 100
@@ -15118,7 +15118,7 @@ static void /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$Send$sendDone(uint8_t arg_0x
 #line 100
     default:
 #line 100
-      /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$Send$default$sendDone(arg_0x7f3ebe839460, msg, error);
+      /*AMQueueP.AMQueueImplP*/AMQueueImplP$0$Send$default$sendDone(arg_0x7f366c9ca460, msg, error);
 #line 100
       break;
 #line 100
